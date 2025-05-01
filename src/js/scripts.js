@@ -7,6 +7,7 @@ function styleCheck() {
     const audio = document.getElementById('myAudio');
     const buttonPlay = document.getElementById('playBtn');
     const buttonStop = document.getElementById('stopBtn');
+    const buttonPause = document.getElementById('pauseBtn')
 
     // Воспроизведение
     buttonPlay.addEventListener('click', () => {
@@ -23,20 +24,26 @@ function styleCheck() {
       document.body.style.background = 'white'
     });
 
+    // pause
+    buttonPause.addEventListener('click', () => {
+        audio.pause();
+        document.body.style.background = '#f3f1f1'
+      });
+
 
     audio.addEventListener('play', () => {
-        alert('Аудио включилось!');
+        alert('Play!');
         
       });
 
 
       audio.addEventListener('ended', () => {
-        alert('Аудио закончилось!');
+        alert('End!');
       });
 
 
       
 
       audio.addEventListener('pause', () => {
-        alert('Пауза!');
+        alert('Pause!');
       });
