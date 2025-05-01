@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My To-Do List</h1>
+        </header>
+        
+        <form class="todo-form">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button type="submit" id="addTaskBtn"><i class="fas fa-plus"></i> Add Task</button>
+        </form>
+        
+        <div class="filters">
+            <a href="#" class="filter active">All</a>
+            <a href="#" class="filter">Active</a>
+            <a href="#" class="filter">Completed</a>
+        </div>
+        
+        <div class="todo-list" id="todoList">
+            <!-- Static task examples -->
+            <!-- <div class="todo-item">
+                <input type="checkbox" class="task-checkbox" id="task1">
+                <label for="task1" class="task-text">Buy groceries</label>
+                <div class="task-controls">
+                    <a href="#" class="edit-btn"><i class="fas fa-edit"></i></a>
+                    <a href="#" class="delete-btn"><i class="fas fa-trash"></i></a>
+                </div>
+            </div> -->
+            
+        
+        <!-- <div class="summary">
+            <p><span class="task-count">3</span> tasks left</p>
+            <a href="#" class="clear-completed-btn">Clear Completed</a>
+        </div> -->
+    </div>
+    <script src="src/js/scripts.js" async defer></script>
+</body>
+</html>
+        
