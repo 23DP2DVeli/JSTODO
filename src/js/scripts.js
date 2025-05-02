@@ -44,8 +44,29 @@ document.getElementById("addTaskBtn").addEventListener("click", AddDeleteEditTas
 
 
 
+// EDIT//////////
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("edit-btn") || (e.target.tagName === "I" && e.target.parentElement.classList.contains("edit-btn"))) {
+    const taskItem = e.target.closest(".todo-item");
+    const label = taskItem.querySelector(".task-text");
 
+    const currentText = label.textContent;
+    const input = document.createElement("input");
+    input.type = "text";
+    input.value = currentText;
+    input.className = "edit-input";
 
+    label.replaceWith(input);
+    input.focus();
+
+    input.addEventListener("blur", () => {
+      const newLabel = document.createElement("label");
+      newLabel.className = "task-text";
+      newLabel.textContent = input.value || currentText;
+      input.replaceWith(newLabel);
+    });
+  }
+});
 
 
 
