@@ -24,27 +24,24 @@
             <a href="#" class="filter">Completed</a>
             <audio id="myAudio" src="Pathetic_-_Dancing_Nihilist_slowed_reverb_(Hydr0.org).mp3"></audio>
         </div>
-        <button id="playBtn">▶ Play music</button>
-        <button id="stopBtn">■ Stop music</button>
-        <button id="pauseBtn">⏸ Pause music</button>
-        <div class="todo-list" id="todoList">
-            <!-- Static task examples -->
-            <!-- <div class="todo-item">
-                <input type="checkbox" class="task-checkbox" id="task1">
-                <label for="task1" class="task-text">Buy groceries</label>
-                <div class="task-controls">
-                    <a href="#" class="edit-btn"><i class="fas fa-edit"></i></a>
-                    <a href="#" class="delete-btn"><i class="fas fa-trash"></i></a>
-                </div>
-            </div> -->
-            
         
-        <!-- <div class="summary">
-            <p><span class="task-count">3</span> tasks left</p>
-            <a href="#" class="clear-completed-btn">Clear Completed</a>
-        </div> -->
-    </div>
+        <div class="todo-list" id="todoList">
+            <!-- New tasks will be added here dynamically -->
+        </div>
+
+        <div class="music">
+            <button id="playBtn">▶ Play music</button>
+            <button id="stopBtn">■ Stop music</button>
+            <button id="pauseBtn">⏸ Pause music</button>
+        </div>
+
+
+        <input type="text" id="soundcloudInput" placeholder="Вставь ссылку на трек SoundCloud">
+        <button id="embedBtn">Добавить трек</button>
+        <div id="playerContainer"></div>
+
+
+        
     <script src="src/js/scripts.js" async defer></script>
 </body>
 </html>
-        
